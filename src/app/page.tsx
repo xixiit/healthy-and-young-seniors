@@ -1,9 +1,13 @@
+import { Hero } from "@/components/Hero";
+import { QuoteBanner } from "@/components/QuoteBanner";
+import { BlogSection } from "@/components/BlogSection";
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center">
-      <p className="text-muted-foreground">
-        Clone target not yet built. Run <code className="font-mono text-foreground">/clone-website</code> to start.
-      </p>
+    <main>
+      <Hero />
+      <QuoteBanner />
+      <BlogSection />
     </main>
   );
 }
