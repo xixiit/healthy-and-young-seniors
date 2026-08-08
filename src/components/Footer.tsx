@@ -32,17 +32,26 @@ export function Footer() {
         </p>
         <ul className="flex flex-wrap justify-center gap-6">
           <li>
-            <a href="/events" className="font-sans text-base font-normal text-brand-blue">
+            <a
+              href="/events"
+              className="font-sans text-base font-normal text-gray-300 transition-colors hover:text-white"
+            >
               Current + Upcoming Events
             </a>
           </li>
           <li>
-            <a href="/products" className="font-sans text-base font-normal text-brand-blue">
+            <a
+              href="/products"
+              className="font-sans text-base font-normal text-gray-300 transition-colors hover:text-white"
+            >
               PRODUCTS WE LOVE!
             </a>
           </li>
           <li>
-            <a href="#" className="font-sans text-base font-normal text-brand-blue">
+            <a
+              href="#"
+              className="font-sans text-base font-normal text-gray-300 transition-colors hover:text-white"
+            >
               weekly motivation
             </a>
           </li>

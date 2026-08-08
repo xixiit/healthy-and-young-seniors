@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { cn, toTitleCase } from "@/lib/utils";
 import { blogPosts } from "@/lib/blog-posts";
 import type { BlogPost, BlogCategory } from "@/types/blog";
 
@@ -145,8 +145,8 @@ export function BlogSection() {
 function BlogCard({ post, visibleCount }: { post: BlogPost; visibleCount: number }) {
   return (
     <div className="flex-shrink-0 px-2" style={{ width: `${100 / visibleCount}%` }}>
-      <div className="flex h-full flex-col bg-white">
-        <div className="relative aspect-[4/3] w-full">
+      <article className="flex h-full flex-col bg-white">
+        <div className="relative aspect-video w-full overflow-hidden">
           <Image
             src={post.image}
             alt={post.title}
@@ -157,14 +157,14 @@ function BlogCard({ post, visibleCount }: { post: BlogPost; visibleCount: number
         </div>
         <div className="flex flex-col gap-2 p-4">
           <p className="font-sans text-sm text-[#919191]">{post.date}</p>
-          <h4 className="font-sans text-[22px] font-normal leading-[24.75px] tracking-[0.99px] text-[#1b1b1b]">
-            {post.title}
-          </h4>
+          <h3 className="font-sans text-[22px] font-normal leading-[24.75px] tracking-[0.99px] text-[#1b1b1b]">
+            {toTitleCase(post.title)}
+          </h3>
           <span className="cursor-pointer font-sans text-base text-brand-blue">
             Continue Reading
           </span>
         </div>
-      </div>
+      </article>
     </div>
   );
 }

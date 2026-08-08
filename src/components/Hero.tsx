@@ -15,9 +15,9 @@ export function Hero() {
         <div className="absolute inset-0 bg-black/[0.29]" />
       </div>
       <div className="relative mx-auto max-w-[900px] px-6 py-12 text-center md:py-20 lg:py-32">
-        <h2 className="text-base leading-5 font-normal tracking-[2px] text-[#f7f7f7] uppercase">
+        <p className="text-base leading-5 font-normal tracking-[2px] text-[#f7f7f7] uppercase">
           Welcome to
-        </h2>
+        </p>
         <h1 className="mb-4 font-heading text-3xl leading-tight font-normal tracking-[1px] text-[#f7f7f7] uppercase md:text-4xl lg:text-[54px] lg:leading-[64.8px]">
           Healthy and Young Seniors
         </h1>
