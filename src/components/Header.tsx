@@ -37,7 +37,7 @@ export function Header() {
             <Menu className="h-6 w-6" />
           </button>
 
-          <Link href="/" className="block text-center">
+          <Link href="/" prefetch={false} className="block text-center">
             <h3 className="font-[family-name:var(--font-libre-baskerville)] text-[37px] font-normal leading-[37px] tracking-[1px] text-[#e2e2e2]">
               Healthy and Young Seniors
             </h3>
@@ -48,6 +48,7 @@ export function Header() {
               <Link
                 key={link.label}
                 href={link.href}
+                prefetch={false}
                 className={cn(
                   "font-sans text-[14px] font-normal leading-[24px] tracking-[3px] uppercase text-[#e2e2e2]",
                   isActive(link.href) && "border-b border-[#5e5e5e] pb-1"
@@ -98,6 +99,7 @@ export function Header() {
             <Link
               key={link.label}
               href={link.href}
+              prefetch={false}
               onClick={closeDrawer}
               className={cn(
                 "font-sans text-[14px] leading-[24px] tracking-[3px] uppercase text-black",
@@ -114,6 +116,7 @@ export function Header() {
           <div className="mt-3">
             <Link
               href="#"
+              prefetch={false}
               onClick={closeDrawer}
               className="font-sans text-[14px] font-normal leading-[24px] tracking-[3px] uppercase text-gray-400 pointer-events-none"
               aria-disabled="true"
