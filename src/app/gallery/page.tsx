@@ -17,7 +17,7 @@ export default function GalleryPage() {
       />
       <section className="py-16">
         <div className="mx-auto grid max-w-[1160px] grid-cols-2 gap-4 px-6 sm:grid-cols-3 lg:grid-cols-4">
-          {blogPosts.map((post) => (
+          {blogPosts.map((post, index) => (
             <div
               key={post.slug}
               className="relative aspect-square overflow-hidden bg-muted"
@@ -26,6 +26,7 @@ export default function GalleryPage() {
                 src={post.image}
                 alt={post.title}
                 fill
+                priority={index === 0}
                 sizes="(min-width: 1024px) 25vw, (min-width: 640px) 33vw, 50vw"
                 className="object-cover"
               />
