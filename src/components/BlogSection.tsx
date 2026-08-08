@@ -71,6 +71,7 @@ export function BlogSection() {
           src="/images/blog-section-bg.jpg"
           alt=""
           fill
+          priority
           sizes="100vw"
           className="object-cover"
         />
