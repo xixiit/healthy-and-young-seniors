@@ -15,7 +15,7 @@ export default function AboutPage() {
         title="About Us"
         description="Our mission is to help seniors be at their best health by inspiring a healthy lifestyle."
       />
-      <QuoteBanner />
+      <QuoteBanner priority />
     </main>
   );
 }

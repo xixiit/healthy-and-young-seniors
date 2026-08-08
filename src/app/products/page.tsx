@@ -21,13 +21,14 @@ export default function ProductsPage() {
       />
       <section className="py-16">
         <div className="mx-auto grid max-w-[1160px] grid-cols-1 gap-8 px-6 sm:grid-cols-2 lg:grid-cols-3">
-          {products.map((post) => (
+          {products.map((post, index) => (
             <div key={post.slug} className="flex flex-col bg-white">
               <div className="relative aspect-[4/3] w-full">
                 <Image
                   src={post.image}
                   alt={post.title}
                   fill
+                  priority={index === 0}
                   sizes="(min-width: 1024px) 33vw, 100vw"
                   className="object-cover"
                 />

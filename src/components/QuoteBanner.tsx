@@ -1,6 +1,12 @@
 import Image from "next/image"
 
-export function QuoteBanner() {
+interface QuoteBannerProps {
+  /** Set when this is the first prominent image on the page (e.g. /about),
+   * so Next.js loads it eagerly instead of flagging it as an unmarked LCP. */
+  priority?: boolean;
+}
+
+export function QuoteBanner({ priority }: QuoteBannerProps = {}) {
   return (
     <section id="about" className="bg-brand-blue py-10">
       <div className="mx-auto grid max-w-[1160px] grid-cols-1 items-center gap-10 px-6 lg:grid-cols-2">
@@ -18,6 +24,7 @@ export function QuoteBanner() {
           alt=""
           width={1160}
           height={772}
+          priority={priority}
           className="h-auto w-full object-cover"
         />
       </div>
