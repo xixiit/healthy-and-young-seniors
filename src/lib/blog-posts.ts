@@ -2,20 +2,6 @@ import type { BlogPost } from "@/types/blog";
 
 export const blogPosts: BlogPost[] = [
   {
-    slug: "more-about-honeybees",
-    date: "September 10, 2022",
-    title: "Why Bees Are Called Worker Bees",
-    image: "/images/blog/why-bees-are-called-worker-bees.jpg",
-    categories: ["Fun Facts"],
-  },
-  {
-    slug: "saving-on-prescriptions-through-cost-plus",
-    date: "April 14, 2022",
-    title: "Saving on Prescriptions Through Cost Plus",
-    image: "/images/blog/saving-on-prescriptions-through-cost-plus.jpg",
-    categories: ["Facts That Can Save You Money"],
-  },
-  {
     slug: "a-pristine-vagina-brings-joy-to-all-women",
     date: "November 1, 2025",
     title: "A pristine vagina brings joy to all women!",
@@ -49,5 +35,33 @@ export const blogPosts: BlogPost[] = [
     title: "Interview Exclusive: Portland's Very Own Ural Thomas",
     image: "/images/blog/interview-exclusive-ural-thomas.jpg",
     categories: ["Interview Exclusives"],
+  },
+  {
+    slug: "interview-exclusive-lyberty",
+    date: "April 3, 2023",
+    title: "Interview Exclusive: Lyberty",
+    image: "/images/blog/interview-exclusive-lyberty.jpg",
+    categories: ["Interview Exclusives"],
+  },
+  {
+    slug: "interview-exclusive-mz-wellnezz",
+    date: "March 25, 2023",
+    title: "Interview Exclusive: Mz. Wellnezz",
+    image: "/images/blog/interview-exclusive-mz-wellnezz.jpg",
+    categories: ["Interview Exclusives", "Products We L♡ve"],
+  },
+  {
+    slug: "more-about-honeybees",
+    date: "September 10, 2022",
+    title: "Why Bees Are Called Worker Bees",
+    image: "/images/blog/why-bees-are-called-worker-bees.jpg",
+    categories: ["Fun Facts"],
+  },
+  {
+    slug: "saving-on-prescriptions-through-cost-plus",
+    date: "April 14, 2022",
+    title: "Saving on Prescriptions Through Cost Plus",
+    image: "/images/blog/saving-on-prescriptions-through-cost-plus.jpg",
+    categories: ["Facts That Can Save You Money"],
   },
 ];
