@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn, toTitleCase } from "@/lib/utils";
 import { blogPosts } from "@/lib/blog-posts";
@@ -21,7 +22,7 @@ const CATEGORIES: CategoryFilter[] = [
 function getVisibleCount(width: number): number {
   if (width >= 1024) return 5;
   if (width >= 768) return 3;
-  return 1;
+  return 2;
 }
 
 export function BlogSection() {
@@ -161,9 +162,9 @@ function BlogCard({ post, visibleCount }: { post: BlogPost; visibleCount: number
           <h3 className="font-sans text-[22px] font-normal leading-[24.75px] tracking-[0.99px] text-[#1b1b1b]">
             {toTitleCase(post.title)}
           </h3>
-          <span className="cursor-pointer font-sans text-base text-brand-blue">
+          <Link href={`/blog/${post.slug}`} className="font-sans text-base text-brand-blue hover:underline">
             Continue Reading
-          </span>
+          </Link>
         </div>
       </article>
     </div>
