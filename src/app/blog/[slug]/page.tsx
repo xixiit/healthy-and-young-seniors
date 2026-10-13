@@ -85,7 +85,7 @@ export default async function BlogPostPage({
         </div>
 
         <div className="flex flex-col gap-4">
-          {content?.paragraphs.map((para, i) => (
+          {content?.paragraphs.map((para: string, i: number) => (
             <p key={i} className="font-sans text-base leading-relaxed text-[#1b1b1b]">
               {para}
             </p>
